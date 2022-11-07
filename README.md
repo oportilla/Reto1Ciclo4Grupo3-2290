@@ -2,7 +2,7 @@
 
 Proyecto del primer reto
 
-<image src="https://github.com/oportilla/Reto1Ciclo4Grupo3-2290/blob/main/DemoAplicacion.mp4" type="video/mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg"></image>
+<video src="https://github.com/oportilla/Reto1Ciclo4Grupo3-2290/blob/main/DemoAplicacion.mp4" type="video/mp4" autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg">Su navegador no soporta contenido multimedia</video>
 
 
 
