@@ -15,9 +15,9 @@ class ConverterPage extends StatefulWidget {
 
 class _ConverterPageState extends State<ConverterPage> {
   // el estado del widget
-  int currency1 = 1;
-  int currency2 = 0;
-
+  int currency1 = 0;
+  int currency2 = 1;
+  
   // función para construir el selector de monedas
   List<Widget> _buildItems() {
     return currencies
@@ -25,6 +25,7 @@ class _ConverterPageState extends State<ConverterPage> {
               title: val,
             ))
         .toList();
+      
   }
 
   @override
@@ -32,7 +33,7 @@ class _ConverterPageState extends State<ConverterPage> {
     // El siguiente widget en el arbol es el Scaffold
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Currency converter'),
+          title: const Text('Currency converter Grupo 3-2290'),
         ),
         body: Column(children: [
           Row(
@@ -75,14 +76,16 @@ class _ConverterPageState extends State<ConverterPage> {
               ),
             ],
           ),
-          const Expanded(
+           Expanded(
               // TODO
               // los nombres de las monedas se pueden obtener en la lista currencies
               // la tasa de cambio se puede obtener en la estructura de datos rates
               child: Center(
-            child: Text(
-                'Aquí incluimos el widget KeyPad, mandando los nombres de las dos monedas y la tasa de cambio'),
-          ))
+                child:
+                KeyPad(textCurrency1: currencies[currency1],textCurrency2:currencies[currency2], rate:rates[currency1][currency2] ),
+              
+            ),
+          )
         ]));
   }
 }
